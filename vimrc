@@ -40,10 +40,6 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 
-" List chars
-set list
-set listchars=tab:\│\ ,trail:-,extends:>,precedes:<,nbsp:+
-
 " Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
