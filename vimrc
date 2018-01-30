@@ -17,7 +17,7 @@ filetype plugin indent on
 " Color settings
 set termguicolors
 let ayucolor="mirage"
-colorscheme ayu 
+colorscheme ayu
 
 " Line numbers
 set relativenumber
