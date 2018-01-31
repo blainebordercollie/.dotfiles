@@ -34,6 +34,10 @@ let g:airline_theme='ayu_mirage'
 set path+=**
 set wildmenu
 
+" In file search option
+set incsearch
+set ignorecase
+
 " Tabulators
 set expandtab
 set shiftwidth=2

@@ -9,4 +9,5 @@ PATH=/home/blaine/.local/bin:$PATH
 [[ $TMUX = "" ]] && exec tmux
 
 alias ls='ls --color=auto'
+alias v='vim'
 export LAMBDA='λ'
