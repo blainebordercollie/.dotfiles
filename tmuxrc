@@ -3,7 +3,7 @@ set -s default-terminal "xterm-termite"
 set -ga terminal-overrides ",xterm-termite:Tc"
 
 # Powerline
-source "/home/blaine/.local/lib/python3.6/site-packages/powerline/bindings/tmux/powerline.conf"
+source "$HOME/.local/lib/python3.6/site-packages/powerline/bindings/tmux/powerline.conf"
 
 # unbind default prefix and set it to Ctrl+a
 unbind C-b
