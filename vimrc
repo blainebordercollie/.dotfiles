@@ -5,8 +5,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'ayu-theme/ayu-vim'
@@ -26,9 +24,9 @@ set number
 " Highlight current line
 set cursorline
 
-" Airline settings
-let g:airline_powerline_fonts = 1
-let g:airline_theme='ayu_mirage'
+" Powerline
+set rtp+=~/.local/lib/python3.6/site-packages/powerline/bindings/vim/
+set laststatus=2
 
 " Fuzzy finder
 set path+=**
