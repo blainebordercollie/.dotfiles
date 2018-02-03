@@ -18,6 +18,5 @@ echo "Creating new session named: $SESSION ..."
 sleep 1
 # Create a new session, named $SESSION, and detach from it
 tmux new-session -d -s $SESSION
-# tmux select-window -t $SESSION:0
 tmux attach -t $SESSION
 exit 0;
