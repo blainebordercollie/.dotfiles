@@ -20,3 +20,4 @@ sleep 1
 tmux new-session -d -s $SESSION
 # tmux select-window -t $SESSION:0
 tmux attach -t $SESSION
+exit 0;
