@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Session name
-SESSION=* 
+SESSION=*
 
 # If the session is already running, just attach to it. stderr > null
 tmux has-session -t $SESSION 2> /dev/null
