@@ -3,12 +3,12 @@ compinit
 promptinit
 
 # Custom stuff
-PATH=$HOME/.local/bin:$PATH
-. $HOME/.local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
+export POWERLINE_SCRIPT="/usr/lib/python3.6/site-packages/powerline/bindings"
+. $POWERLINE_SCRIPT/zsh/powerline.zsh
 
 [[ $TMUX = "" ]] && . $HOME/.dotfiles/tmux_session.zsh 
-[[ $BROWSER = "" ]] && BROWSER=/usr/bin/chromium-browser
+[[ $BROWSER = "" ]] && BROWSER=/usr/bin/chromium
 
 alias ls='ls --color=auto'
-alias v='vim'
+alias v='vim -u ~/.dotfiles/vimrc'
 export LAMBDA='λ'

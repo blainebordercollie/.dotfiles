@@ -16,6 +16,7 @@ filetype plugin indent on
 set termguicolors
 let ayucolor="mirage"
 colorscheme ayu
+syntax on
 
 " Line numbers
 set relativenumber
@@ -24,8 +25,11 @@ set number
 " Highlight current line
 set cursorline
 
+" SUDO Override hack
+cmap w! w !sudo tee > /dev/null %
+
 " Powerline
-set rtp+=~/.local/lib/python3.6/site-packages/powerline/bindings/vim/
+set rtp+=$POWERLINE_SCRIPT/vim/
 set laststatus=2
 
 " Fuzzy finder
