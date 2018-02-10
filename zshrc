@@ -1,14 +1,13 @@
-autoload -Uz compinit promptinit
-compinit
-promptinit
+# oh-my-zsh stuff
+export ZSH=$HOME/.oh-my-zsh
+ZSH_THEME="robbyrussell"
+plugins=(
+  git
+)
+source $ZSH/oh-my-zsh.sh
 
-# Custom stuff
-export POWERLINE_SCRIPT="/usr/lib/python3.6/site-packages/powerline/bindings"
-. $POWERLINE_SCRIPT/zsh/powerline.zsh
-
+# User settings
 [[ $TMUX = "" ]] && . $HOME/.dotfiles/tmux_session.zsh 
-[[ $BROWSER = "" ]] && BROWSER=/usr/bin/chromium
+[[ $BROWSER = "" ]] && BROWSER=/usr/bin/chromium-browser
 
-alias ls='ls --color=auto'
 alias v='vim -u ~/.dotfiles/vimrc'
-export LAMBDA='λ'

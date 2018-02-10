@@ -8,6 +8,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'ayu-theme/ayu-vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 
 filetype plugin indent on
@@ -16,6 +18,7 @@ filetype plugin indent on
 set termguicolors
 let ayucolor="mirage"
 colorscheme ayu
+let g:airline_theme='ayu_mirage'
 syntax on
 
 " Line numbers
@@ -28,9 +31,8 @@ set cursorline
 " SUDO Override hack
 cmap w! w !sudo tee > /dev/null %
 
-" Powerline
-set rtp+=$POWERLINE_SCRIPT/vim/
-set laststatus=2
+" Airline settings
+let g:airline_powerline_fonts = 1
 
 " Fuzzy finder
 set path+=**
