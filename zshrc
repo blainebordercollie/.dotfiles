@@ -12,6 +12,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias v='vim -u ~/.dotfiles/vimrc'
 
+# Vi mode + cursor indicator
 zle-keymap-select () {
 if [ $TERM = "xterm-termite" ]; then
     if [ $KEYMAP = vicmd ]; then
