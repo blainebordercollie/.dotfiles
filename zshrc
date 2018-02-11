@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="nothing"
 plugins=(
-  git
+git
 )
 source $ZSH/oh-my-zsh.sh
 
@@ -11,3 +11,27 @@ source $ZSH/oh-my-zsh.sh
 [[ $BROWSER = "" ]] && BROWSER=/usr/bin/chromium-browser
 
 alias v='vim -u ~/.dotfiles/vimrc'
+
+zle-keymap-select () {
+if [ $TERM = "xterm-termite" ]; then
+    if [ $KEYMAP = vicmd ]; then
+        echo -ne "\e[1 q"
+    else
+        echo -ne "\e[3 q"
+    fi
+fi
+}
+
+zle -N zle-keymap-select
+
+zle-line-init () {
+    zle -K viins
+    if [ $TERM = "xterm-termite" ]; then
+        echo -ne "\e[3 q"
+    fi
+}
+
+zle -N zle-line-init
+
+bindkey -v
+export KEYTIMEOUT=1

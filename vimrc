@@ -44,8 +44,8 @@ set ignorecase
 
 " Tabulators
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 
 " Syntastic
 set statusline+=%#warningmsg#
@@ -56,3 +56,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" Reset cursor shape due to zsh vi mode indicator
+silent exec "!echo '\e[1 q'"
