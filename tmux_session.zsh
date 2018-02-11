@@ -6,10 +6,10 @@ SESSION='M'
 # If the session is already running, just attach to it. stderr > null
 tmux has-session -t $SESSION 2> /dev/null
 if [ $? = 0 ]; then
-       echo "Session $SESSION already exists. Attaching..."
-       sleep 1
-       tmux attach -t $SESSION
-       exit 0;
+    echo "Session $SESSION already exists. Attaching..."
+    sleep 1
+    tmux attach -t $SESSION
+    exit 0;
 fi
 
 # Echo whats going on
