@@ -12,6 +12,10 @@ source $ZSH/oh-my-zsh.sh
 
 alias v='vim -u ~/.dotfiles/vimrc'
 
+# Set Caps-Lock to ESC and CTRL
+setxkbmap -option ctrl:nocaps
+xcape -e 'Control_L=Escape'
+
 # Vi mode + cursor indicator
 zle-keymap-select () {
 if [ $TERM = "xterm-termite" ]; then
