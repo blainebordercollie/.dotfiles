@@ -31,10 +31,10 @@ fi
 zle -N zle-keymap-select
 
 zle-line-init () {
-zle -K viins
-if [ $TERM = "xterm-termite" ]; then
-    echo -ne "\e[3 q"
-fi
+    zle -K viins
+    if [ $TERM = "xterm-termite" ]; then
+        echo -ne "\e[3 q"
+    fi
 }
 
 zle -N zle-line-init
