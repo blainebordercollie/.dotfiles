@@ -28,7 +28,7 @@ set number
 " Highlight current line
 set cursorline
 
-" SUDO Override hack
+" SUDO override hack
 cmap w! w !sudo tee > /dev/null %
 
 " Airline settings
@@ -37,6 +37,9 @@ let g:airline_powerline_fonts = 1
 " Fuzzy finder
 set path+=**
 set wildmenu
+
+" Clipboard change default to +
+set clipboard=unnamedplus
 
 " In file search option
 set incsearch
