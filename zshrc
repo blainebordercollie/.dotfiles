@@ -11,7 +11,7 @@ source $ZSH/oh-my-zsh.sh
 [[ $TMUX = "" ]] && . $HOME/.dotfiles/tmux_session.zsh
 [[ $BROWSER = "" ]] && BROWSER=/usr/bin/chromium-browser
 
-alias v='vim -u ~/.dotfiles/vimrc'
+alias v='vim'
 
 # Set Caps-Lock to ESC and CTRL
 setxkbmap -option ctrl:nocaps
