@@ -12,6 +12,8 @@ source $ZSH/oh-my-zsh.sh
 [[ $BROWSER = "" ]] && BROWSER=/usr/bin/chromium-browser
 
 alias v='vim'
+alias p='python3'
+alias c='gcc'
 
 # Set Caps-Lock to ESC and CTRL
 setxkbmap -option ctrl:nocaps
