@@ -39,20 +39,15 @@ values."
      ;; ----------------------------------------------------------------
      (auto-completion :disabled-for org)
      c-c++
-     django
      emacs-lisp
-     games
      git
      github
      helm
      html
-     javascript
      markdown
      org
-     php
      python
      ranger
-     ruby
      smex
      themes-megapack
      (shell :variables
