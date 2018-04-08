@@ -41,6 +41,7 @@ values."
      emacs-lisp
      git
      github
+     javascript
      helm
      html
      markdown
